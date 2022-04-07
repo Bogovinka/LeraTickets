@@ -60,6 +60,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -78,6 +79,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddC.xaml.cs">
+      <DependentUpon>AddC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Capcha.xaml.cs">
+      <DependentUpon>Capcha.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
@@ -85,6 +92,14 @@
       <DependentUpon>Reg.xaml</DependentUpon>
     </Compile>
     <Compile Include="WorkBD.cs" />
+    <Page Include="AddC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Capcha.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -149,6 +164,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="1.png" />
+    <Resource Include="2.png" />
+    <Resource Include="3.png" />
+    <Resource Include="4.png" />
     <Content Include="DatabaseLogins.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

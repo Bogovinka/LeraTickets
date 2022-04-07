@@ -75,3 +75,7 @@ D:\Git\LeraTickets\TicketBuy\obj\Debug\TicketBuy.Properties.Resources.resources
 D:\Git\LeraTickets\TicketBuy\obj\Debug\TicketBuy.csproj.GenerateResource.cache
 D:\Git\LeraTickets\TicketBuy\obj\Debug\TicketBuy.csproj.CoreCompileInputs.cache
 D:\Git\LeraTickets\TicketBuy\obj\Debug\TicketBuy.csproj.CopyComplete
+D:\Git\LeraTickets\TicketBuy\obj\Debug\AddC.g.cs
+D:\Git\LeraTickets\TicketBuy\obj\Debug\AddC.baml
+D:\Git\LeraTickets\TicketBuy\obj\Debug\Capcha.g.cs
+D:\Git\LeraTickets\TicketBuy\obj\Debug\Capcha.baml

@@ -22,6 +22,7 @@ namespace TicketBuy
     public partial class MainWindow : Window
     {
         string pathAuto = @"auto.txt";
+        int countL = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -36,22 +37,52 @@ namespace TicketBuy
         private void loginB_Click(object sender, RoutedEventArgs e)
         {
             WorkBD f = new WorkBD();
-            if (f.userHave(loginText.Text, passwordText.Password))
+            if (countL >= 3)
             {
-                Menu m = new Menu();
-                m.Show();
-                using (FileStream fs = File.Create(pathAuto))
+                Capcha c = new Capcha();
+                c.ShowDialog();
+                if (c.DialogResult == true)
                 {
-                    byte[] info = new UTF8Encoding(true).GetBytes($"{loginText.Text}\n{passwordText.Password}");
-                    // Add some information to the file.
-                    fs.Write(info, 0, info.Length);
+                    if (f.userHave(loginText.Text, passwordText.Password))
+                    {
+                        Menu m = new Menu();
+                        m.Show();
+                        using (FileStream fs = File.Create(pathAuto))
+                        {
+                            byte[] info = new UTF8Encoding(true).GetBytes($"{loginText.Text}\n{passwordText.Password}");
+                            // Add some information to the file.
+                            fs.Write(info, 0, info.Length);
+                        }
+                        this.Close();
+                    }
+                    else
+                    {
+                        countL = 0;
+                        MessageBox.Show("Такого пользователя не существует или такого пароля");
+                    }
                 }
-                this.Close();
             }
             else
             {
-                MessageBox.Show("Такого пользователя не существует или такого пароля");
+                if (f.userHave(loginText.Text, passwordText.Password))
+                {
+                    using (FileStream fs = File.Create(pathAuto))
+                    {
+                        byte[] info = new UTF8Encoding(true).GetBytes($"{loginText.Text}\n{passwordText.Password}");
+                        // Add some information to the file.
+                        fs.Write(info, 0, info.Length);
+                    }
+                    Menu m = new Menu();
+                    m.Show();
+                    this.Close();
+                }
+                else
+                {
+                    countL++;
+                    MessageBox.Show("Такого пользователя не существует или такого пароля");
+                }
             }
+
         }
 
         private void RegB_Click(object sender, RoutedEventArgs e)
@@ -81,5 +112,6 @@ namespace TicketBuy
             passwordText.Visibility = Visibility.Visible;
             passwordText2.Visibility = Visibility.Hidden;
         }
+
     }
 }
