@@ -79,3 +79,12 @@ D:\Git\LeraTickets\TicketBuy\obj\Debug\AddC.g.cs
 D:\Git\LeraTickets\TicketBuy\obj\Debug\AddC.baml
 D:\Git\LeraTickets\TicketBuy\obj\Debug\Capcha.g.cs
 D:\Git\LeraTickets\TicketBuy\obj\Debug\Capcha.baml
+C:\Users\mafak\OneDrive\Документы\GitHub\LeraTickets\TicketBuy\bin\Debug\DatabaseLogins.mdf
+C:\Users\mafak\OneDrive\Документы\GitHub\LeraTickets\TicketBuy\bin\Debug\DatabaseLogins_log.ldf
+C:\Users\mafak\OneDrive\Документы\GitHub\LeraTickets\TicketBuy\obj\Debug\AddC.g.cs
+C:\Users\mafak\OneDrive\Документы\GitHub\LeraTickets\TicketBuy\obj\Debug\Buy.g.cs
+C:\Users\mafak\OneDrive\Документы\GitHub\LeraTickets\TicketBuy\obj\Debug\Capcha.g.cs
+C:\Users\mafak\OneDrive\Документы\GitHub\LeraTickets\TicketBuy\obj\Debug\TicketBuy_Content.g.cs
+C:\Users\mafak\OneDrive\Документы\GitHub\LeraTickets\TicketBuy\obj\Debug\AddC.baml
+C:\Users\mafak\OneDrive\Документы\GitHub\LeraTickets\TicketBuy\obj\Debug\Capcha.baml
+C:\Users\mafak\OneDrive\Документы\GitHub\LeraTickets\TicketBuy\obj\Debug\Buy.baml

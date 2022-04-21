@@ -82,6 +82,9 @@
     <Compile Include="AddC.xaml.cs">
       <DependentUpon>AddC.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Buy.xaml.cs">
+      <DependentUpon>Buy.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Capcha.xaml.cs">
       <DependentUpon>Capcha.xaml</DependentUpon>
     </Compile>
@@ -93,6 +96,10 @@
     </Compile>
     <Compile Include="WorkBD.cs" />
     <Page Include="AddC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Buy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

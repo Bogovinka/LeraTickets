@@ -79,7 +79,10 @@ namespace TicketBuy
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button b = (Button) sender;
-            MessageBox.Show($"Нажал на {b.Tag.ToString()}");
+            Buy buy = new Buy();
+            buy.Show();
+            buy.info.Content = $"Покупатель: {File.ReadLines("auto.txt").First()}\nКонцерт: {b.Tag.ToString()}";
+            
         }
 
         private void add_Click(object sender, RoutedEventArgs e)

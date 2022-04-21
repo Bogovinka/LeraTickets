@@ -36,10 +36,8 @@ namespace TicketBuy
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         SqlCommand sqlCom = new SqlCommand($"INSERT INTO Concerts VALUES(N'{Name.Text}', N'{Image.Text}', N'{Size.Text}', N'{Note.Text}')", connection);
-                        SqlCommand sqlCom2 = new SqlCommand($"ALTER TABLE Logins ADD {Name.Text} int DEFAULT 0", connection);
                         connection.Open();
                         sqlCom.ExecuteNonQuery();
-                        sqlCom2.ExecuteNonQuery();
                         Menu m = new Menu();
                         m.Show();
                         this.Close();
